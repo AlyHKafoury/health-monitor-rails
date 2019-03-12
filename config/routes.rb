@@ -1,5 +1,3 @@
 HealthMonitor::Engine.routes.draw do
-  controller :health do
-    get :check
-  end
+	get :healthz, to: "health#check"
 end
